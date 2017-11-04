@@ -1,2 +1,2 @@
-# docker-mega-everdrive-x7
-A docker image for the Mega Everdrive X7 development tools by @krikzz
+# devkit-mega-everdrive-x7
+Development utilities for the Sega Megadrive with Mega Everdrive X7 by @krikzz
