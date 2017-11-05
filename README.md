@@ -8,7 +8,7 @@ The official software distributed for the Mega Everdrive X7 is windows-native an
 I have managed to create a utility called megaedx7-run, written in golang using a cross-platform serial library, which can interact with the Sega Megadrive/Mega Everdrive X7. This program can load arbitrary game roms over USB and execute them on the game console in various modes as supported by the Mega Everdrive. These modes are os, cd, sms
 * `sms`: Sega Master System ROM
   * untested
-  * requires supporting SMS BIOS ROMs on SD card of Mega Everdrive X7
+  * requires supporting SMS BIOS ROMs on SD card of Mega Everdrive X7
 * `md`: Megadrive/Genesis ROM
   * Tested with Sonic 2, Streets of Rage, Toe Jam & Earl
 * `cd`: Mega CD / Sega CD ROM
