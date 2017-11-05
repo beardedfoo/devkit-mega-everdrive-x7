@@ -3,3 +3,4 @@ pkg
 src/github.com/goburrow/
 *.bin
 *.smd
+.DS_Store
