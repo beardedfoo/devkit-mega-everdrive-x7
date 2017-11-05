@@ -84,7 +84,7 @@ func main() {
 		fmt.Printf("WARNING: ROM may be corrupt: expected string 'SEGA' at offset 0x100\n")
 	}
 
-	// Open serial port (optional)
+	// Open serial port
 	fmt.Printf("Connecting to serial...")
 	serialConfig := &serial.Config{
 		Address: serialPort, BaudRate: baudRate, StopBits: 1,
