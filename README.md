@@ -5,6 +5,10 @@ The Sega Megadrive (known as Genesis in US) is a video game console released by 
 
 The official software distributed for the Mega Everdrive X7 is windows-native and written in C#, but offers some compatibility with other systems via the mono project. This project is an attempt to increase the accessibilty of development using the Mega Everdrive X7 by creating natively cross-platform utilities.
 
+## Running Games from USB
+
+The primary feature of the USB port on the Mega Everdrive X7 cartridge is that it allows the console to run a new game ROM without requiring the SD card or the X7 cartridge to be removed from the system.
+
 I have managed to create a utility called megaedx7-run, written in golang using a cross-platform serial library, which can interact with the Sega Megadrive/Mega Everdrive X7. This program can load arbitrary game roms over USB and execute them on the game console in various modes as supported by the Mega Everdrive. These modes are:
 * `sms`: Sega Master System ROM
   * untested
@@ -28,3 +32,6 @@ The Mega Everdrive X7 cartridge seems to expect raw ROM dumps; other formats hav
 ![megaedx7-run usage](images/megaedx7-help.png?raw=true)
 ![megaedx7-run example](images/megaedx7-run-cmd.png?raw=true)
 
+## Debugging Over USB
+
+I hope to look into this in the future.
