@@ -16,8 +16,12 @@ I have managed to create a utility called megaedx7-run, written in golang using 
   * may be problematic due to address space collisions between the Mega CD add-on and the Mega Everdrive X7
 * `m10`: Unknown
 * `os`: Unknown; seems to load Mega Everdrive X7 firmware ROMs
-* `ssf`: Unknown
-  * Apparently some ROMs have the ASCII string 'SSF ' at ROM offset 0x105; this mode might be useful for such ROMs
+* `ssf`: Allows ROMs > 4MB
+  * This mode seems to enable bank switching a la Super Street Fighter 2: The New Challengers, allowing ROMs larger than the 4MB of address space which the Sega Megadrive allocates for the cartridge (https://emu-docs.org/Genesis/ssf2.txt)
+  * Some emulators look for the ASCII string 'SSF ' at ROM offset 0x105; this mode might be useful for such ROMs
+  * Some technical information about this bank switching technique is available:
+    * https://emu-docs.org/Genesis/ssf2.txt
+    * https://github.com/ekeeke/Genesis-Plus-GX/issues/67
 
 The Mega Everdrive X7 cartridge seems to expect raw ROM dumps; other formats have not worked in my testing. ROMs with the ASCII string 'SEGA' at offset 0x100 have worked in my testing.
 
