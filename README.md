@@ -17,7 +17,7 @@ I have managed to create a utility called megaedx7-run, written in golang using 
 * `m10`: Unknown
 * `os`: Unknown; seems to load Mega Everdrive X7 firmware ROMs
 * `ssf`: Allows ROMs > 4MB
-  * This mode seems to enable bank switching a la Super Street Fighter 2: The New Challengers, allowing ROMs larger than the 4MB of address space which the Sega Megadrive allocates for the cartridge (https://emu-docs.org/Genesis/ssf2.txt)
+  * This mode seems to enable bank switching a la Super Street Fighter 2: The New Challengers. Bank switching allows ROMs larger than the 4MB address space which the Sega Megadrive allocates for the cartridge
   * Some emulators look for the ASCII string 'SSF ' at ROM offset 0x105; this mode might be useful for such ROMs
   * Some technical information about this bank switching technique is available:
     * https://emu-docs.org/Genesis/ssf2.txt
